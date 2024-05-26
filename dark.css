@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+.body{
+    background-color: hsl(0, 0%, 3%);
+    font-weight: 500;
+    line-height: 1.8;
+    font-family: "JW Text";
+    letter-spacing: 1px;
+    color:  #fff ;
+    scroll-behavior: smooth;
+}
+.waviy{
+    color: hsl(350, 90%, 49%);
+ }
+ .waviy {
+     position: relative;
+     /* -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2)); */
+     /* font-size: 60px; */
+   }
+   .waviy span {
+     /* font-family: 'Alfa Slab One', cursive; */
+     position: relative;
+     display: inline-block;
+     /* color: #fff; */
+     text-transform: uppercase;
+     animation: waviy 1s 2;
+     animation-delay: calc(.1s * var(--i));
+     
+   }
+   @keyframes waviy {
+     0%,40%,100% {
+       transform: translateY(0)
+     }
+     20% {
+       transform: translateY(-20px)
+     }
+   }
+   .rw{
+    padding: 10px 30px;  
+      font-weight: 600;
+      border: 1px solid #fff ;
+      text-decoration: none;
+      color: #fff;
+      transition: .7s;
+      z-index: 1;
+      font-size: 16px;
+      background-color: hsl(350, 90%, 49%) ;
+      
+  }
+  .rw:hover{
+    color:hsl(350, 90%, 49%);
+    border: 1px solid hsl(0, 0%, 3%);
+    background-color: transparent;
+    /* background-color:  hsl(350, 90%, 49%); */
+   
+  }
+  .em{
+    background-color: #362f2f;
+  }
